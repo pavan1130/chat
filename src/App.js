@@ -8,7 +8,7 @@ const App = () => {
   return (
     <ChatEngine
       height="100vh"
-      projectID="dc224d1a-5804-4e14-8e98-3c935bea6dec"
+      projectID="de90dd85-8621-4631-aa22-ef6e9663584d"
       userName={localStorage.getItem("username")}
       userSecret={localStorage.getItem("password")}
       renderChatFeed={(chatAppProps) => <ChatFeed {...chatAppProps} />}
