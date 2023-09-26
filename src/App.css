@@ -210,14 +210,25 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 62,5%;
+  font-size: 62, 5%;
 }
 
 .wrapper {
   height: 100vh;
-    width: 100%;
-  background: rgb(117,84,160);
-  background: linear-gradient(90deg, rgba(117,84,160,1) 7%, rgba(117,84,160,1) 17%, rgba(106,95,168,1) 29%, rgba(99,103,174,1) 44%, rgba(87,116,184,1) 66%, rgba(70,135,198,1) 83%, rgba(44,163,219,1) 96%, rgba(22,188,237,1) 100%, rgba(0,212,255,1) 100%);  
+  width: 100%;
+  background: rgb(117, 84, 160);
+  background: linear-gradient(
+    90deg,
+    rgba(117, 84, 160, 1) 7%,
+    rgba(117, 84, 160, 1) 17%,
+    rgba(106, 95, 168, 1) 29%,
+    rgba(99, 103, 174, 1) 44%,
+    rgba(87, 116, 184, 1) 66%,
+    rgba(70, 135, 198, 1) 83%,
+    rgba(44, 163, 219, 1) 96%,
+    rgba(22, 188, 237, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
   display: flex;
   justify-content: center;
   align-items: center;
@@ -226,7 +237,7 @@
 .input {
   color: #333;
   font-size: 1.2rem;
-    margin: 0 auto;
+  margin: 0 auto;
   padding: 1.5rem 2rem;
   border-radius: 0.2rem;
   background-color: rgb(255, 255, 255);
@@ -248,7 +259,7 @@
   color: white;
   margin-bottom: 30px;
   width: 100%;
-  font-size: 2.3em;;
+  font-size: 2.3em;
 }
 
 .button {
@@ -273,7 +284,7 @@
   transition: 0.4s;
 }
 .button span:after {
-  content: '\00bb';
+  content: "\00bb";
   position: absolute;
   opacity: 0;
   top: 0;
@@ -292,4 +303,21 @@
   color: white;
   text-align: center;
   margin-top: 20px;
+}
+
+.back-button {
+  border-radius: 5px;
+  position: absolute;
+  left: -25%;
+  top: -493px;
+  background: rgb(117, 84, 160);
+  color: white; /* Set the text color to white */
+  padding: 5px 10px; /* Add padding for better appearance */
+  border: none; /* Remove the button border */
+  cursor: pointer; /* Change the cursor to a pointer on hover */
+  transition: background-color 0.3s ease; /* Add a smooth transition effect for background-color */
+}
+
+.back-button:hover {
+  background-color: rgb(226, 226, 226);
 }
