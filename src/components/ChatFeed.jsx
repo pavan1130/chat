@@ -4,7 +4,7 @@ import TheirMessage from "./TheirMessage";
 
 const ChatFeed = (props) => {
   // modify objects in props
-  const { chats, activeChat, userName, messages, onBack } = props;
+  const { chats, activeChat, userName, messages } = props;
   const chat = chats && chats[activeChat];
 
   const renderReadReceipts = (message, isMyMessage) => {
@@ -72,7 +72,12 @@ const ChatFeed = (props) => {
 
         <div style={{ height: "100px" }} />
         <div className="message-form-container">
-          <button onClick={onBack} className="back-button">
+          <button
+            onClick={() =>
+              (window.location.href = "http://localhost:3000/home")
+            }
+            className="back-button"
+          >
             {"<"}
           </button>
           <MessageForm {...props} chatId={activeChat} />
