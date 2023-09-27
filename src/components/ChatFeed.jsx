@@ -74,7 +74,7 @@ const ChatFeed = (props) => {
         <div className="message-form-container">
           <button
             onClick={() =>
-              (window.location.href = "http://localhost:3000/home")
+              (window.location.href = "http://localhost:3001/home")
             }
             className="back-button"
           >
